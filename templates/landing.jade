@@ -1,0 +1,56 @@
+extends layout
+block content        
+  .container
+    .row
+      .col-md-2
+      .col-md-7.main-header.text-center
+        img(src=contents.images["sieveable.png"].url, alt="Sieveable")
+        h1= page.metadata.textBranding
+        .main-header-buttons
+          ul.list-inline
+            li
+              a(href="https://github.com/sieveable", class="btn btn-default btn-lg intro-button")
+                i.fa.fa-github.fa-fw
+                span GitHub
+            li
+              a(href="#", class="btn btn-default btn-lg intro-button")
+                span  Coming soon!
+        .col-md-3
+    .row
+      .col-md-12.intro-hedaer
+        img(src=contents.images["sieveable-browser.png"].url, class="center-block img-responsive", alt="Sieveable Browser")
+    .row
+      // List all features
+      .container.marketing
+        each val, index in page.metadata.features
+          hr.features-divider
+          if index % 2 == 0
+            .row.features.even-card
+              .col-md-7
+                h2.features-heading= val.title
+                p.lead= val.description
+              .col-md-5
+                img.features-image.img-responsive.center-block(src=contents.images[val.imgSrc].url, alt=val.imgAlt)
+          else
+            .row.features.odd-card
+              .col-md-7.col-md-push-5
+                h2.features-heading= val.title
+                p.lead= val.description
+              .col-md-5.col-md-pull-7
+                img.features-image.img-responsive.center-block(src=contents.images[val.imgSrc].url, alt=val.imgAlt)
+    footer
+      .container.footer
+        ul
+          li
+            a(href='http://blog.sieveable.io') Blog
+          li
+            a(href='/docs') Docs
+          li
+            a(href='/about') About
+          li
+            a(href='/privacy') Privacy
+          li
+            a(href='/contact') Contact
+        p © 2015 Sikuli Lab.
+
+ 

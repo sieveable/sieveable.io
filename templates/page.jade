@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  nav.page-header-nav
+    a(type="button", class="btn btn-default btn-lg page-header-link", href="/")
+      span(class="glyphicon glyphicon-home", aria-hidden="true")
+  .container
+    .row
+      .col-md-2
+      .col-md-8.main-header.text-center
+        img(src=contents.images["sieveable.png"].url, class="center-block img-responsive", alt="Sieveable")
+      .col-md-2
+    .row
+      .col-md-2
+      .col-md-8
+        .section
+          h1= page.title
+          section.content!= typogr(page.html).typogrify()
+      .col-md-2

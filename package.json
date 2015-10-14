@@ -1,0 +1,13 @@
+{
+  "name": "sieveable.io",
+  "description": "Sieveable website",
+  "version": "1.0.0",
+  "private": "true",
+  "main": "index.js",
+  "dependencies": {
+    "typogr": "^0.6.5"
+  },
+  "devDependencies": {},
+  "author": "Khalid Alharbi",
+  "license": "Copyright Sieveable"
+}
