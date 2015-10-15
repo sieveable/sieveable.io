@@ -1,5 +1,21 @@
 extends layout
-block content        
+block content 
+  nav.navbar
+    .container-fluid
+      .navbar-header
+        button.navbar-toggle.collapsed.pull-right(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        ul.nav.navbar-nav.nav-push.pull-right
+          li
+            a.nav-push-item.nav-link(href="http://blog.sieveable.io") Blog
+          li
+            a.nav-push-item.nav-link(href="/docs") Documentation
+          li
+            a.nav-push-item.nav-link(href="https://github.com/sikuli/sieveable") GitHub
   .container
     .row
       .col-md-2
@@ -9,11 +25,7 @@ block content
         .main-header-buttons
           ul.list-inline
             li
-              a(href="https://github.com/sieveable", class="btn btn-default btn-lg intro-button")
-                i.fa.fa-github.fa-fw
-                span GitHub
-            li
-              a(href="#", class="btn btn-default btn-lg intro-button")
+              a(href="#", class="btn btn-lg intro-button")
                 span  Coming soon!
         .col-md-3
     .row

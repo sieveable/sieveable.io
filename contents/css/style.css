@@ -1,3 +1,16 @@
+.navbar-toggle .icon-bar {
+  background-color: #007095  ;
+}
+a.nav-link {
+  line-height: 1.667;
+  padding: 1.48133333rem 1rem 1.90457143rem 1rem;
+  display: block;
+  position: relative;
+  color: #000;
+  font-family: "Open Sans",Tahoma,Verdana,Segoe,sans-serif;
+  font-size: 18px;
+}
+
 /* Header
 ------------------------- */
 
@@ -92,6 +105,7 @@ footer {
 
 /* Social signup buttons
 ------------------------*/
+
 .social-signup-btn {
   margin: 0.5em 0;
 }
