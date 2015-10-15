@@ -28,7 +28,7 @@ a.nav-link {
   margin: 5px auto;
 }
 .intro-button, .intro-button:hover, .intro-button:active, .intro-button:focus, .intro-button:active:focus {
-  background-color: #007095;
+  background: linear-gradient(to bottom, #61bd4f 0, #5aac44 100%);
   color: #FFFFFF;
 }
 .intro-hedaer {
@@ -36,6 +36,14 @@ a.nav-link {
 }
 .intro-hedaer img {
   padding: 10px 0;
+}
+
+.main-header-buttons{
+  margin: 1em 0;
+  padding: .6em 1.3em;
+}
+a.intro-button span{
+  font-weight: bold;
 }
 
 /* Static pages header
